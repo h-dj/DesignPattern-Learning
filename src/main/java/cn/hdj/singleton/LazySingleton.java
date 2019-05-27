@@ -13,14 +13,11 @@ import java.io.Serializable;
  * 是否多线程安全：是
  * 实现难度：易
  */
-public class LazySingleton implements Serializable{
-
+public class LazySingleton{
     private static LazySingleton instance;
-
     private LazySingleton() {
     }
-
-    public static synchronized LazySingleton getInstance1() {
+    public static synchronized LazySingleton getInstance() {
         if (instance == null) {
             instance = new LazySingleton();
         }

@@ -1,6 +1,7 @@
-package cn.hdj.factory.methodFactory;
+package cn.hdj.factory.factoryMethod;
 
-import cn.hdj.factory.Audi;
+
+import cn.hdj.factory.Byd;
 import cn.hdj.factory.Car;
 
 /**
@@ -8,9 +9,9 @@ import cn.hdj.factory.Car;
  * @Date: 2019/5/23 22:55
  * @Description:
  */
-public class AudiCarFactory implements CarFactory {
+public class BydCarFactory implements CarFactory {
     @Override
     public Car createCar() {
-        return new Audi();
+        return new Byd();
     }
 }

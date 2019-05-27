@@ -16,6 +16,7 @@ public class DCLSingleton {
 
     /**
      * volatile保持线程间的可见性,阻止指令重排
+     * 在没有初始化完成之前，不能赋值
      */
     private static volatile DCLSingleton instance;
 

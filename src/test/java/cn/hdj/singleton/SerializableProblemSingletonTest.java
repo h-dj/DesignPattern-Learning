@@ -15,29 +15,22 @@ public class SerializableProblemSingletonTest {
 
 
     @Test
-    public void test() {
+    public void test() throws Exception {
         SerializableProblemSingleton singleton = SerializableProblemSingleton.getSingleton();
         System.out.println(singleton);
-        try {
-            File file = new File(".\\src\\main\\resources\\obj.txt");
-            //序列化对象
-//            ObjectOutput output = new ObjectOutputStream(new FileOutputStream(file));
-//
-//            output.writeObject(singleton);
-//            output.flush();
-//            output.close();
 
-            //反序列化对象
-            ObjectInput input = new ObjectInputStream(new FileInputStream(file));
-            singleton = (SerializableProblemSingleton) input.readObject();
-            System.out.println(singleton);
+        File file = new File(".\\src\\main\\resources\\obj.txt");
+        //序列化对象
+        ObjectOutput output = new ObjectOutputStream(new FileOutputStream(file));
+        output.writeObject(singleton);
+        output.flush();
+        output.close();
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
+        //反序列化对象
+        ObjectInput input = new ObjectInputStream(new FileInputStream(file));
+        singleton = (SerializableProblemSingleton) input.readObject();
+        System.out.println(singleton);
+        input.close();
 
         /**
          * 输出结果

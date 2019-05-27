@@ -14,7 +14,4 @@ package cn.hdj.singleton;
  */
 public enum EnumSingleton {
     INSTANCE;
-
-    private EnumSingleton() {
-    }
 }

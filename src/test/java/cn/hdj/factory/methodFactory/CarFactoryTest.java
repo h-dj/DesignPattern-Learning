@@ -1,9 +1,9 @@
 package cn.hdj.factory.methodFactory;
 
 import cn.hdj.factory.Car;
+import cn.hdj.factory.factoryMethod.AudiCarFactory;
+import cn.hdj.factory.factoryMethod.BydCarFactory;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @Auther: hdj

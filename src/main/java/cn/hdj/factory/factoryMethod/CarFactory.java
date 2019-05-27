@@ -1,4 +1,4 @@
-package cn.hdj.factory.methodFactory;
+package cn.hdj.factory.factoryMethod;
 
 import cn.hdj.factory.Car;
 

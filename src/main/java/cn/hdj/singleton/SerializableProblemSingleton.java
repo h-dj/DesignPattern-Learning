@@ -10,10 +10,7 @@ import java.io.Serializable;
  * 注意序列化对象一定要实现Serializable接口
  */
 public class SerializableProblemSingleton implements Serializable {
-
-
     private static volatile SerializableProblemSingleton instance;
-
     private SerializableProblemSingleton() {
         if (instance != null) {
             throw new RuntimeException("instance is not null!");
@@ -35,8 +32,8 @@ public class SerializableProblemSingleton implements Serializable {
     /**
      * java.io.ObjectInputStream#readOrdinaryObject(boolean) ：反序列化对象，会重新new一个对象 obj
      * java.io.ObjectStreamClass#hasReadResolveMethod() ：判断是否用定义readResolve()方法
-     * java.io.ObjectStreamClass#invokeReadResolve(java.lang.Object) ： 使用反射执行该方法，返回实例的引用 rep，
-     * 如果obj != rep ; obj = rep ;从而达到引用同一个对象
+     * java.io.ObjectStreamClass#invokeReadResolve(java.lang.Object) ： 使用反射执行该方法，返回实例的引用 instance，
+     * 如果obj != instance ; obj = instance ;从而达到引用同一个对象
      *
      * @return
      */
