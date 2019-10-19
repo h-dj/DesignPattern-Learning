@@ -1,6 +1,5 @@
 package cn.hdj.proxy.dynamicProxy.jdk;
 
-import cn.hdj.proxy.staticProxy.RealStar;
 import cn.hdj.proxy.staticProxy.Star;
 
 import java.lang.reflect.InvocationHandler;
