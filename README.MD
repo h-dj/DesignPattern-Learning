@@ -4,7 +4,7 @@
 1. 单一原则
 2. 里氏替换原则
 3. 接口隔离原则
-4.  依赖倒置原则（面向接口编程）
+4. 依赖倒置原则（面向接口编程）
 5. 迪米特法则
 6. 开闭原则
 #### 二、设计模式
@@ -27,10 +27,11 @@
     - java.util.logging包
 - [x] 访问者模式
     - java.nio.file.FileVisitor接口
-
+- [x] 中介者模式
+    - MVC 框架
+    - java.lang.reflect.Method.invoke方法
 
 #### 三、参考
 - https://www.kancloud.cn/sstd521/design/193631
 - https://design-patterns.readthedocs.io/zh_CN/latest/
 - https://www.codeproject.com/Articles/28359/Design-pattern-FAQ-Part-Design-pattern-training
-- https://cloud.tencent.com/developer/article/1410519
