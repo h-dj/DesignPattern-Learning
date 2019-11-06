@@ -30,6 +30,9 @@
 - [x] 中介者模式
     - MVC 框架
     - java.lang.reflect.Method.invoke方法
+- [x] 命令模式
+
+
 
 #### 三、参考
 - https://www.kancloud.cn/sstd521/design/193631
