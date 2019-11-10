@@ -31,10 +31,12 @@
     - MVC 框架
     - java.lang.reflect.Method.invoke方法
 - [x] 命令模式
-
+- [x]　责任链模式
+    - Servlet 过滤器
 
 
 #### 三、参考
 - https://www.kancloud.cn/sstd521/design/193631
 - https://design-patterns.readthedocs.io/zh_CN/latest/
 - https://www.codeproject.com/Articles/28359/Design-pattern-FAQ-Part-Design-pattern-training
+- http://c.biancheng.net/view/1383.html
