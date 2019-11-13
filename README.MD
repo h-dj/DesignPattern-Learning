@@ -24,7 +24,9 @@
     - Integer.valueOf(int i)
     - String常量池
 - [x] 外观模式(门面模式)
-    - java.util.logging包
+    - java.io.InputStream, java.io.OutputStream, java.io.Reader and java.io.Writer
+    - java.util.Collections#synchronizedXXX()
+    - java.util.Collections#unmodifiableXXX()
 - [x] 访问者模式
     - java.nio.file.FileVisitor接口
 - [x] 中介者模式
@@ -32,7 +34,7 @@
     - java.lang.reflect.Method.invoke方法
 - [x] 命令模式
 - [x]　责任链模式
-    - Servlet 过滤器
+    - javax.servlet.Filter#doFilter()
 
 
 #### 三、参考
@@ -40,3 +42,4 @@
 - https://design-patterns.readthedocs.io/zh_CN/latest/
 - https://www.codeproject.com/Articles/28359/Design-pattern-FAQ-Part-Design-pattern-training
 - http://c.biancheng.net/view/1383.html
+- https://github.com/iluwatar/java-design-patterns
