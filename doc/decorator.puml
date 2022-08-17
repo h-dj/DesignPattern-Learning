@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface ICar{
+     void move()
+}
+
+class SportsCar implements ICar{
+     void move()
+}
+
+class Truck implements ICar{
+     void move()
+}
+
+abstract class SuperCar  implements ICar{
+    #ICar car
+    +SuperCar(ICar car)
+}
+
+class FlySuperCar extends SuperCar{
+
+    +FlySuperCar(ICar car)
+}
+
+class AISuperCar extends SuperCar{
+    +AISuperCar(ICar car)
+}
+
+
+SuperCar -> ICar
+
+@enduml

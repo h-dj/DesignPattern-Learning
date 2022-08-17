@@ -1,0 +1,73 @@
+
+@startuml
+' 类型
+'抽象类
+abstract        abstract
+abstract class  "abstract class"
+'注解
+annotation      annotation
+
+'类
+class           class
+'枚举
+enum            enum
+'接口
+interface       interface
+
+@enduml
+
+
+
+@startuml
+' 关系
+'泛化关系，继承
+Class01 <|-- Class02
+
+'实现
+interface     interface
+interface <|.. Class11
+
+'组合关系
+Class03 *-- Class04
+
+'聚合关系
+Class05 o-- Class06
+
+' 关联关系(association)
+Class20 --> Class21
+
+' 依赖关系(dependency)
+Class22 ..> Class23
+
+@enduml
+
+
+@startuml
+'https://plantuml.com/class-diagram
+'类型
+
+
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collection
+
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class ArrayList {
+    Object[] elementData
+    size()
+}
+
+enum TimeUnit {
+    DAYS
+    HOURS
+    MINUTES
+}
+
+@enduml
